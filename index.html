@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch </title>
+</head>
+<body>
+    <h1>Stopwatch Web Application</h1>
+
+    <div class="stopwatch-container">
+        <div class="stopwatch">
+            <div id="display" class="display">00:00:00:000</div>
+            <div id="controls" class="buttons">
+                <button onclick="startStopwatch()" class="btn start">Start</button>
+                <button onclick="pauseStopwatch()" class="btn pause">Pause</button>
+                <button onclick="resetStopwatch()" class="btn reset">Reset</button>
+                <button onclick="recordLap()" class="btn lap">Lap</button>
+            </div>
+            <ul id="lapList" class="lap-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
